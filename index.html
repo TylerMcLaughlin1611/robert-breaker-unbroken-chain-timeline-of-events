@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Unbroken Chain: A Timeline of the AI-Generated Quotes</title>
+<meta name="description" content="A documented timeline of the AI-generated quotations in Robert Breaker’s The Unbroken Chain of Salvation by Faith in The Blood.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f5f1e8;
+  --paper-2:#ece6d8;
+  --card:#fbf9f4;
+  --ink:#1b1815;
+  --ink-2:#4a443c;
+  --ink-3:#7a7266;
+  --rule:#d8d0bf;
+  --blood:#8e1b1b;
+  --blood-soft:#f1dcd6;
+  --verified:#2f5d46;
+  --verified-soft:#dce8df;
+  --unknown:#a8956b;
+  --unknown-soft:#efe6cf;
+  --serif:"Newsreader", Georgia, "Times New Roman", serif;
+  --sans:"Inter Tight", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Consolas, monospace;
+  --measure:40rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#15130f; --paper-2:#1d1a15; --card:#1f1c17;
+    --ink:#efe9dd; --ink-2:#c4bcad; --ink-3:#8f8778; --rule:#36312a;
+    --blood:#e0605a; --blood-soft:#3a1d1b;
+    --verified:#7fbf9b; --verified-soft:#1d2e24;
+    --unknown:#cdb682; --unknown-soft:#2e2819;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#15130f; --paper-2:#1d1a15; --card:#1f1c17;
+  --ink:#efe9dd; --ink-2:#c4bcad; --ink-3:#8f8778; --rule:#36312a;
+  --blood:#e0605a; --blood-soft:#3a1d1b;
+  --verified:#7fbf9b; --verified-soft:#1d2e24;
+  --unknown:#cdb682; --unknown-soft:#2e2819;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:1.175rem;line-height:1.68;
+  font-optical-sizing:auto;text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration-color:var(--blood);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--blood)}
+::selection{background:var(--blood);color:var(--paper)}
+
+/* progress */
+.progress{position:fixed;inset:0 0 auto 0;height:3px;z-index:50;background:transparent}
+.progress span{display:block;height:100%;width:0;background:var(--blood);transition:width .08s linear}
+
+/* masthead */
+.mast{
+  display:flex;justify-content:flex-end;align-items:center;gap:1rem;
+  padding:1rem clamp(1rem,4vw,3rem);border-bottom:1px solid var(--rule);
+  font-family:var(--sans);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+}
+.mast b{color:var(--ink);font-weight:600}
+.theme-btn{
+  font:inherit;letter-spacing:.1em;background:none;border:1px solid var(--rule);color:var(--ink-2);
+  padding:.4rem .7rem;border-radius:999px;cursor:pointer
+}
+.theme-btn:hover{border-color:var(--ink-2);color:var(--ink)}
+
+/* hero */
+.hero{
+  padding:clamp(3rem,9vw,7.5rem) clamp(1rem,4vw,3rem) clamp(2.5rem,6vw,4.5rem);
+  max-width:78rem;margin:0 auto;
+}
+.kicker{
+  font-family:var(--sans);font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--blood);display:flex;align-items:center;gap:.75rem;margin:0 0 1.75rem
+}
+.kicker::before{content:"";width:2.25rem;height:2px;background:var(--blood)}
+h1{
+  font-family:var(--serif);font-weight:400;font-size:clamp(2.5rem,7.2vw,6rem);
+  line-height:.98;letter-spacing:-.025em;margin:0;max-width:16ch;
+  font-variation-settings:"opsz" 72;
+}
+h1 em{font-style:italic;color:var(--blood)}
+.dek{
+  font-size:clamp(1.2rem,2.1vw,1.55rem);line-height:1.45;color:var(--ink-2);
+  max-width:38rem;margin:2rem 0 0;font-weight:300
+}
+.meta{
+  display:flex;flex-wrap:wrap;gap:.5rem 2rem;margin-top:2.75rem;padding-top:1.25rem;border-top:1px solid var(--rule);
+  font-family:var(--sans);font-size:.8rem;color:var(--ink-3);letter-spacing:.02em
+}
+.meta strong{display:block;font-weight:600;color:var(--ink);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.15rem}
+
+/* stats */
+.stats{
+  background:var(--ink);color:var(--paper);
+  padding:clamp(2.5rem,6vw,4.5rem) clamp(1rem,4vw,3rem);
+}
+:root[data-theme="dark"] .stats{background:var(--paper-2);color:var(--ink)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .stats{background:var(--paper-2);color:var(--ink)}}
+.stats-inner{max-width:78rem;margin:0 auto;display:grid;grid-template-columns:1fr;gap:3rem}
+@media (min-width:900px){.stats-inner{grid-template-columns:1fr 1fr;gap:4rem}}
+.stat-label{font-family:var(--sans);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;opacity:.65;margin:0 0 .75rem}
+.stat-big{font-size:clamp(3.5rem,9vw,6.5rem);line-height:.9;letter-spacing:-.03em;font-weight:300;margin:0}
+.stat-big small{font-size:.32em;letter-spacing:0;opacity:.7;margin-left:.35rem;font-weight:400}
+.stat-cap{font-size:1.05rem;opacity:.85;margin:.75rem 0 1.5rem;max-width:30rem}
+.bar{display:flex;height:14px;border-radius:2px;overflow:hidden;gap:2px}
+.bar i{display:block;height:100%}
+.bar .ai{background:#c8443c}
+.bar .un{background:#b9a676}
+.bar .ok{background:#6fae8b}
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:.9rem;font-family:var(--sans);font-size:.8rem;opacity:.85}
+.legend span{display:inline-flex;align-items:center;gap:.45rem}
+.legend span::before{content:"";width:.7rem;height:.7rem;border-radius:1px;background:currentColor}
+.legend .l-ai::before{background:#c8443c}
+.legend .l-un::before{background:#b9a676}
+.legend .l-ok::before{background:#6fae8b}
+.legend b{font-family:var(--mono);font-weight:500}
+
+/* layout */
+.layout{
+  max-width:78rem;margin:0 auto;padding:clamp(2.5rem,6vw,5rem) clamp(1rem,4vw,3rem) 4rem;
+  display:grid;grid-template-columns:minmax(0,1fr);gap:3rem
+}
+@media (min-width:1080px){.layout{grid-template-columns:13rem minmax(0,1fr);gap:5rem}}
+.toc{display:none}
+@media (min-width:1080px){
+  .toc{display:block;position:sticky;top:2rem;align-self:start;font-family:var(--sans);font-size:.82rem}
+}
+.toc p{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin:0 0 1rem;font-weight:600}
+.toc ol{list-style:none;margin:0;padding:0;border-left:1px solid var(--rule)}
+.toc a{display:block;padding:.4rem 0 .4rem 1rem;margin-left:-1px;border-left:2px solid transparent;color:var(--ink-3);text-decoration:none;line-height:1.35}
+.toc a:hover{color:var(--ink)}
+.toc a.active{color:var(--ink);border-left-color:var(--blood);font-weight:500}
+
+article{min-width:0}
+.prose{max-width:var(--measure)}
+section{scroll-margin-top:1.5rem}
+section + section{margin-top:clamp(3.5rem,8vw,6rem)}
+.sec-num{font-family:var(--mono);font-size:.78rem;color:var(--blood);letter-spacing:.08em;display:block;margin-bottom:.6rem}
+h2{
+  font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.08;letter-spacing:-.018em;
+  margin:0 0 1.5rem;max-width:22ch
+}
+h3{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ink-2);margin:2.5rem 0 .9rem}
+p{margin:0 0 1.15em}
+.lede::first-letter{
+  float:left;font-size:4.6em;line-height:.82;padding:.08em .1em 0 0;color:var(--blood);font-weight:400
+}
+.note{font-style:italic;color:var(--ink-2)}
+
+/* callouts */
+.ledger{display:grid;gap:1rem;margin:1.75rem 0;max-width:var(--measure)}
+@media (min-width:640px){.ledger{grid-template-columns:repeat(3,1fr)}}
+.ledger div{border-top:2px solid var(--ink);padding-top:.9rem}
+.ledger div:nth-child(2){border-color:var(--unknown)}
+.ledger div:nth-child(3){border-color:var(--blood)}
+.ledger strong{display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.5rem}
+.ledger p{font-size:.98rem;line-height:1.55;color:var(--ink-2);margin:0}
+
+.pull{
+  margin:2.5rem 0;padding:0 0 0 1.5rem;border-left:3px solid var(--blood);
+  font-size:clamp(1.35rem,2.6vw,1.75rem);line-height:1.35;font-style:italic;font-weight:300;max-width:34rem
+}
+
+blockquote.source{
+  margin:1.5rem 0;padding:1.4rem 1.5rem;background:var(--card);border:1px solid var(--rule);border-radius:3px;
+  font-size:1.08rem;line-height:1.6;max-width:var(--measure)
+}
+blockquote.source p{margin:0}
+blockquote.source cite{display:block;margin-top:.9rem;font-family:var(--sans);font-style:normal;font-size:.8rem;color:var(--ink-3);letter-spacing:.02em}
+
+/* timeline */
+.timeline{position:relative;margin-top:2rem}
+.month{
+  position:relative;display:flex;align-items:baseline;gap:1rem;margin:3.5rem 0 1.5rem;
+}
+.month:first-child{margin-top:0}
+.month h3{
+  margin:0;font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.1rem);font-weight:400;letter-spacing:-.01em;
+  text-transform:none;color:var(--ink)
+}
+.month span{flex:1;height:1px;background:var(--rule)}
+.event{
+  position:relative;display:grid;grid-template-columns:4.75rem minmax(0,1fr);gap:0 1.25rem;
+  max-width:48rem
+}
+@media (min-width:640px){.event{grid-template-columns:6.5rem minmax(0,1fr);gap:0 2rem}}
+.event-body{border-left:1px solid var(--rule);padding-bottom:2.25rem}
+.event:last-child .event-body,.event:has(+ .month) .event-body{border-left-color:transparent}
+.event time{
+  font-family:var(--mono);font-size:.78rem;color:var(--ink-3);padding-top:.3rem;line-height:1.3;letter-spacing:.02em
+}
+.event time b{display:block;font-family:var(--serif);font-size:1.7rem;font-weight:400;color:var(--ink);letter-spacing:-.02em;line-height:1}
+.event-body{position:relative;padding-left:1.5rem}
+@media (min-width:640px){.event-body{padding-left:2rem}}
+.event-body::before{
+  content:"";position:absolute;left:-.33rem;top:.45rem;width:.65rem;height:.65rem;border-radius:50%;
+  background:var(--paper);border:2px solid var(--ink-3)
+}
+@media (min-width:640px){.event-body::before{left:-.33rem}}
+.event.key .event-body::before{background:var(--blood);border-color:var(--blood);box-shadow:0 0 0 4px var(--blood-soft)}
+.event h4{font-family:var(--sans);font-size:1.02rem;font-weight:600;line-height:1.35;margin:.15rem 0 .6rem;letter-spacing:-.005em}
+.event h4 .tag{
+  display:inline-block;vertical-align:.12em;margin-left:.4rem;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:.18rem .45rem;border-radius:2px;background:var(--blood-soft);color:var(--blood);font-weight:600
+}
+.event p{font-size:1.06rem}
+.event p:last-child{margin-bottom:0}
+.event ul{padding-left:1.1rem;margin:.5rem 0 0}
+.event li{margin-bottom:.9rem;font-size:1.06rem}
+.event li strong{font-family:var(--sans);font-size:.92rem;font-weight:600}
+
+/* compare */
+.compare{display:grid;gap:1rem;margin:1.5rem 0 1.25rem}
+.pair{display:grid;grid-template-columns:1fr;border:1px solid var(--rule);border-radius:3px;overflow:hidden;background:var(--card)}
+@media (min-width:720px){.pair{grid-template-columns:1fr 1fr}}
+.pair > div{padding:1.1rem 1.25rem 1.25rem}
+.pair .claimed{background:var(--blood-soft)}
+.pair .actual{border-top:1px solid var(--rule)}
+@media (min-width:720px){.pair .actual{border-top:0;border-left:1px solid var(--rule)}}
+.pair .who{font-family:var(--sans);font-weight:600;font-size:.85rem;margin-bottom:.15rem}
+.pair .lbl{font-family:var(--sans);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:.7rem;display:flex;align-items:center;gap:.4rem}
+.pair .claimed .lbl{color:var(--blood)}
+.pair .actual .lbl{color:var(--verified)}
+.pair q{display:block;font-size:1rem;line-height:1.55;font-style:italic;quotes:"“" "”"}
+.pair .claimed q{text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--blood) 45%,transparent);text-decoration-thickness:1px}
+.pair .actual .muted{font-size:.95rem;color:var(--ink-2)}
+
+/* reviews */
+.reviews{list-style:none;padding:0;margin:1.5rem 0;max-width:48rem;border-top:1px solid var(--rule)}
+.reviews li{
+  display:grid;grid-template-columns:4.5rem 5.5rem minmax(0,1fr);gap:.25rem 1rem;align-items:baseline;
+  padding:.9rem 0;border-bottom:1px solid var(--rule);font-size:1rem;line-height:1.5
+}
+@media (max-width:560px){.reviews li{grid-template-columns:4rem minmax(0,1fr)}.reviews .txt{grid-column:1/-1}}
+.reviews .d{font-family:var(--mono);font-size:.78rem;color:var(--ink-3)}
+.reviews .s{font-family:var(--sans);font-size:.82rem;letter-spacing:.06em;color:var(--unknown);white-space:nowrap}
+.reviews .s.low{color:var(--blood)}
+.reviews .fmt{display:block;font-family:var(--sans);font-size:.72rem;color:var(--ink-3);letter-spacing:.04em;margin-top:.15rem}
+
+.obs{display:grid;gap:1.25rem;margin-top:2rem;max-width:var(--measure)}
+@media (min-width:720px){.obs{grid-template-columns:1fr 1fr}}
+.obs div{padding:1.25rem;background:var(--card);border:1px solid var(--rule);border-radius:3px}
+.obs b{font-family:var(--mono);font-weight:500;color:var(--blood);font-size:.8rem;display:block;margin-bottom:.4rem}
+.obs p{font-size:1rem;margin:0;color:var(--ink-2)}
+
+/* standing */
+.standing{
+  margin-top:2rem;padding:clamp(1.5rem,4vw,2.5rem);border:1px solid var(--ink);position:relative;max-width:var(--measure)
+}
+.standing::before{
+  content:"Status as of Oct. 2, 2026";position:absolute;top:-.7rem;left:1.25rem;background:var(--paper);padding:0 .6rem;
+  font-family:var(--sans);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--blood)
+}
+.standing p:last-child{margin-bottom:0}
+.fix{list-style:none;padding:0;margin:1.5rem 0 0;counter-reset:f}
+.fix li{counter-increment:f;display:flex;gap:1rem;padding:.75rem 0;border-top:1px solid var(--rule);font-size:1.02rem}
+.fix li::before{content:counter(f,decimal-leading-zero);font-family:var(--mono);font-size:.78rem;color:var(--blood);padding-top:.25rem}
+
+/* appendix + sources */
+.appendix{background:var(--paper-2);border-radius:3px;padding:clamp(1.5rem,4vw,2.5rem);max-width:48rem}
+.btn{
+  display:inline-flex;align-items:center;gap:.6rem;margin-top:.5rem;padding:.8rem 1.2rem;border-radius:2px;
+  background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:.88rem;font-weight:500;text-decoration:none
+}
+.btn:hover{background:var(--blood);color:#fff}
+.src-grid{display:grid;gap:2.5rem;margin-top:1rem}
+@media (min-width:900px){.src-grid{grid-template-columns:1fr 1fr;gap:2.5rem 4rem}}
+.src h3{margin-top:0}
+.src ol{list-style:none;padding:0;margin:0;counter-reset:s}
+.src li{counter-increment:s;display:grid;grid-template-columns:2rem minmax(0,1fr);padding:.6rem 0;border-top:1px solid var(--rule);font-family:var(--sans);font-size:.9rem;line-height:1.4}
+.src li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:.72rem;color:var(--ink-3);padding-top:.15rem}
+.src li a{text-decoration:none}
+.src li a:hover{text-decoration:underline}
+.src li small{display:block;color:var(--ink-3);font-family:var(--mono);font-size:.7rem;margin-top:.2rem;word-break:break-all}
+.src-note{font-family:var(--sans);font-size:.85rem;color:var(--ink-3);margin-bottom:2rem}
+
+footer{
+  border-top:1px solid var(--rule);margin-top:4rem;padding:2rem clamp(1rem,4vw,3rem) 3rem;
+  font-family:var(--sans);font-size:.8rem;color:var(--ink-3);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem
+}
+footer a{color:var(--ink-2)}
+
+@media print{
+  .progress,.toc,.theme-btn{display:none}
+  .stats{background:none;color:var(--ink);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+  body{font-size:11pt}
+}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+<header class="mast">
+  <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">Theme</button>
+</header>
+
+<div class="hero">
+  <h1>Robert Breaker’s <em>The Unbroken Chain</em> of Salvation</h1>
+  <p class="dek">A timeline of the AI-generated quotes in a book that says it documents twenty centuries of preachers teaching salvation by faith in the blood of Christ.</p>
+  <div class="meta">
+    <div><strong>Book released</strong>December 22, 2025</div>
+    <div><strong>Unpublished (in part)</strong>February 16, 2026</div>
+    <div><strong>Kindle edition last checked</strong>October 2, 2026</div>
+  </div>
+</div>
+
+<div class="stats" aria-label="Audit results">
+  <div class="stats-inner">
+    <div>
+      <p class="stat-label">Chapter 8 · 78 quotes</p>
+      <p class="stat-big">3<small>genuine</small></p>
+      <p class="stat-cap">Only three of Chapter 8’s 78 quotations are real. Forty-four are AI-generated; thirty-one could not be verified.</p>
+      <div class="bar" role="img" aria-label="44 AI-generated, 31 unverified, 3 genuine of 78">
+        <i class="ai" style="flex:44"></i><i class="un" style="flex:31"></i><i class="ok" style="flex:3"></i>
+      </div>
+      <div class="legend"><span class="l-ai"><b>44</b> AI-generated</span><span class="l-un"><b>31</b> unverified</span><span class="l-ok"><b>3</b> genuine</span></div>
+    </div>
+    <div>
+      <p class="stat-label">Chapter 9 · 91 quotes</p>
+      <p class="stat-big">87<small>appear AI-generated</small></p>
+      <p class="stat-cap">In Chapter 9, 87 of 91 quotations appear to be AI-generated. The remaining four could not be verified.</p>
+      <div class="bar" role="img" aria-label="87 AI-generated, 4 unverified of 91">
+        <i class="ai" style="flex:87"></i><i class="un" style="flex:4"></i>
+      </div>
+      <div class="legend"><span class="l-ai"><b>87</b> AI-generated</span><span class="l-un"><b>4</b> unverified</span><span class="l-ok"><b>0</b> genuine</span></div>
+    </div>
+  </div>
+</div>
+
+<main class="layout">
+  <nav class="toc" aria-label="Contents">
+    <p>Contents</p>
+    <ol>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#establish">What I can and can’t establish</a></li>
+      <li><a href="#listing">The book and its listing</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#reviews">What the Amazon reviews show</a></li>
+      <li><a href="#standing">Where things stand</a></li>
+      <li><a href="#appendix">Appendix</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ol>
+  </nav>
+
+  <article>
+    <section id="summary" class="prose">
+      <span class="sec-num">01</span>
+      <h2>Summary</h2>
+      <p class="lede">On December 22, 2025, Robert Breaker released <i>The Unbroken Chain of Salvation by Faith in The Blood</i>, a book that says it documents twenty centuries of preachers teaching salvation by faith in the blood of Christ.</p>
+      <p>Many of the book’s quotations were generated by an AI chatbot rather than taken from the historical sources. By Breaker’s and Robert Potthoff’s own descriptions, an AI was asked to produce “verbatim quotes.” In my audit, only 3 of Chapter 8’s 78 quotes are genuine; 44 are AI-generated and 31 could not be verified. In Chapter 9, 87 of 91 quotes appear to be AI-generated and 4 could not be verified.</p>
+      <p>On February 16, 2026, Breaker said on a livestream that he had unpublished the book and wanted to fix it. The physical editions were pulled, but the English and Spanish digital editions stayed on sale. The Kindle edition I read on October 2, 2026 had not been revised.</p>
+    </section>
+
+    <section id="establish">
+      <span class="sec-num">02</span>
+      <h2>What I can and can’t establish</h2>
+      <div class="ledger">
+        <div>
+          <strong>Established</strong>
+          <p>From primary sources: the dates, videos and listings below; what Breaker and Potthoff said on camera; and the fact that the quotes discussed here do not appear in the sources they are credited to.</p>
+        </div>
+        <div>
+          <strong>Someone else’s work</strong>
+          <p>The Chapter 8 spreadsheet was built by Tony (YouTube: Jeremiah333-JesusSaves). It is credited to him, and the appendix is his work, not mine.</p>
+        </div>
+        <div>
+          <strong>Speculation</strong>
+          <p>My speculation is marked when it appears, I.E why Robert Breaker hasn't removed it.</p>
+        </div>
+      </div>
+      <div class="prose">
+        <p>I corresponded with Tony early in 2026; we are no longer in contact, and nothing in this article depends on anything he told me privately. His actions do not represent me.</p>
+        <p class="note">I have written critically of Breaker’s soteriology before (the series <i>Robert Breaker’s Salvation Theology Is a Modern Doctrine</i>). I am not a neutral party, however I have tried to let the primary sources carry the argument.</p>
+      </div>
+    </section>
+
+    <section id="listing" class="prose">
+      <span class="sec-num">03</span>
+      <h2>The book and its listing</h2>
+      <p>The Amazon description calls the book “thoroughly documented” and says it draws on “modern A.I. search engine analysis.” It also promises to show “why A.I. itself confesses” that faith in the blood is necessary to be saved.</p>
+      <p class="pull">So the book advertised its use of AI from day one. What the listing did not say is that AI was also used to produce quotations attributed to historical figures.</p>
+    </section>
+
+    <section id="timeline">
+      <span class="sec-num">04</span>
+      <h2>Timeline</h2>
+      <div class="timeline">
+
+        <div class="month"><h3>December 2025</h3><span></span></div>
+
+        <div class="event key">
+          <time><b>22</b>Dec 2025</time>
+          <div class="event-body"><h4>The book is released.</h4></div>
+        </div>
+
+        <div class="event">
+          <time><b>23</b>Dec 2025</time>
+          <div class="event-body">
+            <h4>“My New Book is Now Out!”</h4>
+            <p>Breaker says he gives “many, many, many quotes” from well-known preachers and from Independent Baptist preachers. He encourages viewers to take the book to their pastors to see “whether or not they are preaching the true message of salvation.” Whatever one thinks of that goal, it made the book’s accuracy a practical matter: readers were being asked to measure their pastors against it.</p>
+          </div>
+        </div>
+
+        <div class="event">
+          <time><b>26</b>Dec 2025</time>
+          <div class="event-body">
+            <h4>“Do All Baptists Preach Faith in the Blood?”</h4>
+            <p>Breaker says that asking Jesus into your heart or praying for salvation comes from Unitarianism and Universalism. Two things are worth checking.</p>
+            <p>Church historian Thomas Kidd, in “‘Ask Jesus into Your Heart’: A History of the Sinner’s Prayer” (<i>The Gospel Coalition</i>), traces that language to Puritan and evangelical roots, not Unitarian or Universalist ones. I checked his research and it holds up.</p>
+            <p>Early Christian writers describe asking and praying to God for salvation. Two examples:</p>
+            <blockquote class="source">
+              <p>“Jonah proclaimed destruction to the Ninevites; but they, repenting of their sins, propitiated God by prayer, and obtained salvation, although they were aliens of God.”</p>
+              <cite>Clement of Rome, 1 Clement 7, c. 96–97 A.D.</cite>
+            </blockquote>
+            <blockquote class="source">
+              <p>“Necessarily he set forth ‘those who call upon him.’ For God does not give grace without discernment, extending it even to those who are unwilling to offer so much to the Benefactor as at least to ask and pray with him. And lest anyone say that many fail to call upon the Lord Jesus out of ignorance rather than unbelief and ingratitude, he shows through what follows that God took away even the excuse of their ignorance, sending evangelists and heralds who urge and invite them to ask for the gift. Therefore he added what follows.”</p>
+              <cite>Diodore of Tarsus, on Romans 10:11–13, 4th century</cite>
+            </blockquote>
+            <p>They make it hard to call asking God for salvation a modern invention.</p>
+          </div>
+        </div>
+
+        <div class="event">
+          <time><b>27</b>Dec 2025</time>
+          <div class="event-body">
+            <h4>“Will You Have Any Rewards in Heaven?”</h4>
+            <p>Breaker ties heavenly rewards to his view of salvation and repeatedly tells viewers to buy the book.</p>
+          </div>
+        </div>
+
+        <div class="event">
+          <time><b>28</b>Dec 2025</time>
+          <div class="event-body">
+            <h4>“Faith in the Blood has been Preached for 2000 Years Now!!!”</h4>
+            <p>Breaker holds up a proof copy, says he has ordered 10 copies, and reports that the book has sold 325 copies, adding that this matches Romans 3:25. This matters later: it shows he checks his sales numbers. Viewers, he says, are giving the book to relatives and to pastors.</p>
+            <p>That same day he posted “Is This the Worst Gospel Tract Ever?” which also links the book in its description.</p>
+          </div>
+        </div>
+
+        <div class="event">
+          <time><b>30</b>Dec 2025</time>
+          <div class="event-body">
+            <h4>“Are you Deceived by Another Gospel?”</h4>
+            <p>Breaker reads from notes in an 1800s family Bible that a viewer sent him. I can’t find those notes online, and there is no way to verify what the Bible says beyond Breaker’s word. (I discuss this in Part 4 of my series.)</p>
+          </div>
+        </div>
+
+        <div class="month"><h3>January 2026</h3><span></span></div>
+
+        <div class="event">
+          <time><b>4</b>Jan 2026</time>
+          <div class="event-body">
+            <h4>“Should Have Added This To My New Book!!!”</h4>
+            <p>Breaker sings two hymns about the blood as further historical support.</p>
+          </div>
+        </div>
+
+        <div class="event">
+          <time><b>15</b>Jan 2026</time>
+          <div class="event-body">
+            <h4>“Saved by Your Prayer?”</h4>
+            <p>Breaker presents 52 quotes from historical figures said to deny the sinner’s prayer. As far as I can tell, only one of the 52 is real, and it has been modified; the other 51 trace back only to Breaker. They share a pattern: deny the sinner’s prayer, affirm the blood. That pattern is my reason for suspecting more AI-generated quotes. This is a provisional finding, and the full results will come in a separate series.</p>
+          </div>
+        </div>
+
+        <div class="event key">
+          <time><b>15</b>Jan 2026</time>
+          <div class="event-body">
+            <h4>“Why I Wrote This Book!”</h4>
+            <p>This is the most substantive of the promotional videos. Breaker says he traveled to libraries and Bible schools across America looking for quotes from old preachers. He also says his mother read the book and told him, “I don’t think you wrote that book. I think God wrote that book.” He replied that the Holy Spirit helped, but he wrote it.</p>
+            <p>He then reads quotes from Chapter 8. Three are worth comparing with the real sources.</p>
+            <div class="compare">
+              <div class="pair">
+                <div class="claimed">
+                  <div class="who">Gregory the Great, c. 600</div>
+                  <div class="lbl">As quoted in the book</div>
+                  <q>Not the ceremonies of man, but faith in His sacrifice.</q>
+                </div>
+                <div class="actual">
+                  <div class="who">&nbsp;</div>
+                  <div class="lbl">The record</div>
+                  <p class="muted">Gregory was a pope, which is an odd witness for a Baptist argument, and this quotation does not check out.</p>
+                </div>
+              </div>
+              <div class="pair">
+                <div class="claimed">
+                  <div class="who">John Wesley</div>
+                  <div class="lbl">As quoted in the book</div>
+                  <q>By faith in His blood. Through faith in His blood, here lies the way to justification: not by merit nor penance, but by a believing trust in the blood of Jesus Christ.</q>
+                </div>
+                <div class="actual">
+                  <div class="who"><i>The Means of Grace</i></div>
+                  <div class="lbl">What Wesley actually taught</div>
+                  <q>all who desire the grace of God are to wait for it in the way of prayer… Ask, and it shall be given you.</q>
+                </div>
+              </div>
+              <div class="pair">
+                <div class="claimed">
+                  <div class="who">John Chrysostom, c. 400</div>
+                  <div class="lbl">As quoted in the book</div>
+                  <q>The blood has done everything… Let us then come boldly, not trusting ourselves, but trusting the blood.</q>
+                </div>
+                <div class="actual">
+                  <div class="who">Homily 10 on Acts</div>
+                  <div class="lbl">What Chrysostom actually says</div>
+                  <q>Call upon Him for the benefit of your enemy; call upon Him for the salvation of your own soul; then He will be present.</q>
+                </div>
+              </div>
+            </div>
+            <p>In the same video Breaker says, “I never found any quote of them saying, ‘Just ask Jesus into your heart,’ or ‘Ask God to save you.’” The Wesley, Chrysostom, Clement and Diodore passages above all describe asking God for salvation.</p>
+            <p><b>A note on timing:</b> While he said he had quotes from historical figures, only 3 of the entire 78 quotes were real, and those were on the Eucharist. And of those quotes, he said that the AI was implicitly mistaken about the "blood in the cup" and the blood on the cross. So those aren't applicable.</p>
+          </div>
+        </div>
+
+        <div class="event">
+          <time><b>18</b>Jan 2026</time>
+          <div class="event-body">
+            <h4>Tony publishes a warning</h4>
+            <p>“Robert Breaker book: The Unbroken Chain of Salvation by Faith in the Blood: WARNING!” goes through part of Chapter 8.</p>
+          </div>
+        </div>
+
+        <div class="event">
+          <time><b>24</b>Jan 2026</time>
+          <div class="event-body">
+            <h4>“Never Stop Preaching Faith in the Blood!!!”</h4>
+            <p>In this video, which links the book in its description, Breaker responds to critics: “I’m not making these up… These books are out there. You can find them.” He says he has 35 pages of Dr. Ruckman quotes about the blood on his RRB3 site. I couldn’t find 35 pages. What I did find is a page quoting Ruckman’s <i>The Simplicity of Salvation</i> (1987): “If you don’t know that, it’s because you are lost.” The same book ends with an invitation to pray:</p>
+            <blockquote class="source">
+              <p>“Wherever you are, bow your head and pray a simple prayer something like this: ‘Lord Jesus, I know I am a sinner, and unless you save me, I am lost forever. I now come to you, the best way I know how, and ask you to save me.’”</p>
+              <cite>Peter S. Ruckman, <i>The Simplicity of Salvation</i> (1987)</cite>
+            </blockquote>
+            <p>This is the pattern of selective quotation I describe in my earlier series: sources are cited for the blood while the rest of their teaching is left out.</p>
+          </div>
+        </div>
+
+        <div class="event key">
+          <time><b>27</b>Jan 2026</time>
+          <div class="event-body">
+            <h4>“Robert Breaker’s new Book, Chapter 8”</h4>
+            <p>Tony publishes a video that goes through a spreadsheet of every Chapter 8 quote and finds all but three of the 78 to be fake. The spreadsheet is reproduced in the appendix, with his permission and credit. At my request he corrected the John Wesley entry.</p>
+            <p class="note">Note on Wesley: Tony’s notes on Wesley conflate Wesley’s view of confession in Romans 10 with petitionary salvation. Wesley did teach that people should ask God for grace as a means of grace, but he did not harmonize that with his comments on Romans 10.</p>
+          </div>
+        </div>
+
+        <div class="month"><h3>February 2026</h3><span></span></div>
+
+        <div class="event key">
+          <time><b>16</b>Feb 2026</time>
+          <div class="event-body">
+            <h4>The livestream <span class="tag">Turning point</span></h4>
+            <p>Breaker and Robert Potthoff, a Breaker supporter, hold a livestream titled “Learning About A.I. (How to Use It).” The main points:</p>
+            <ul>
+              <li><strong>The accounts of who used the AI conflict.</strong> Breaker says he was overextended, that he “went to brother Potthoff” to fill in missing material, and that Potthoff “went to AI.” Potthoff says he prompted the AI to produce verbatim quotes and then twice asked it to verify them. By June 2 Breaker is saying, “I went to AI and asked for some truths.” The livestream and the June video can’t both be the whole story.</li>
+              <li><strong>“The spirit of the quote.”</strong> Potthoff says the AI sometimes “gave me the spirit of the quote instead of the actual quote,” because some sources were in Latin or Greek and were translated. A quotation in quotation marks is a claim that those are the words in the source. A language model can’t supply the spirit of a text it hasn’t read.</li>
+              <li>Potthoff says the only method he would recommend is using agent mode, one person at a time, with the AI showing where it found each quote. Neither man says that was done for Chapter 8, which suggests it was ordinary prompting (which is not connected to RAG).</li>
+              <li><strong>What Breaker admitted.</strong> He said he trusted the AI, that “some of them are paraphrases without a doubt and some may even be made up,” and that he wasn’t comfortable with that doubt. He told listeners they could ask Amazon for refunds, said he had unpublished the book, and said he would rewrite it.</li>
+              <li>He also tried to explain some of the quotes by saying AI had pulled Roman Catholic statements about the blood in the sacrament, “the wrong blood,” and leaned on Augustine, whose wider soteriology is not a Baptist one. That is only applicable to the three out of context quotes, the remaining 75 are just fake.</li>
+              <li><strong>What was and wasn’t taken down.</strong> The physical English and Spanish editions were pulled. The digital English and Spanish editions were not. I can’t say why. It may be oversight, HOWEVER Breaker has said he follows his sales figures. As of October 2, 2026, the Kindle edition was still on sale.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="month"><h3>March – June 2026</h3><span></span></div>
+
+        <div class="event">
+          <time><b>1</b>Mar 2026</time>
+          <div class="event-body">
+            <h4>“True Baptists Preach Faith in the Blood!!!”</h4>
+            <p>Breaker reads commentaries I cover in Parts 2 and 3 of my series against his livestream "Faith in the Blood is not a modern doctrine". One is from Hyde Park Publishers, whose church explicitly supports the sinner’s prayer and tells readers to pray one to be saved. At the end he holds up a physical copy of <i>The Unbroken Chain</i> and says anyone not preaching the blood atonement is “preaching another gospel.”</p>
+          </div>
+        </div>
+
+        <div class="event key">
+          <time><b>2</b>Jun 2026</time>
+          <div class="event-body">
+            <h4>“AI or ARTIFICIAL INTELLIGENCE Walkin and A-Talking”</h4>
+            <p>Breaker describes the Chapter 8 episode in the first person. “So we went to AI and we asked for quotes on faith in the blood,” he says, then: “I went to AI and asked for some truths and it says here are verbatim historically documented quotes.” He adds that “AI gave me some paraphrases and didn’t give me the actual quotes.” He also says he uses AI to make thumbnails, and he complains in the same video that AI is bad for research. This, of course is contradicting the idea that Potthoff was the one who generated the AI quotes.</p>
+          </div>
+        </div>
+
+        <div class="month"><h3>July 2026</h3><span></span></div>
+
+        <div class="event">
+          <time><b>14</b>Jul 2026</time>
+          <div class="event-body">
+            <h4>“DON’T LET THE DEVIL WIN! Walkin and A-Talking”</h4>
+            <p>The thumbnail appears to be AI-generated: Breaker looks on while a devil figure is trampled by a foot belonging to Jesus. To my eye the devil resembles a television personality who shares my name, Tyler McLaughlin of <i>Wicked Tuna</i>. I can’t know the prompt, and I can’t say it was aimed at me. An image generator given a name will often reproduce a well-known namesake, which may be all that happened. I include it because it fits a pattern: Breaker said on June 2 that he uses AI for thumbnails, and he kept doing so.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="reviews">
+      <span class="sec-num">05</span>
+      <h2>What the Amazon reviews show</h2>
+      <div class="prose">
+        <p>Here are the reviews since the livestream, in order. Reviewer names are omitted. All are on the English edition unless noted, and “paperback” and “Kindle” are the format Amazon displays.</p>
+      </div>
+      <ul class="reviews">
+        <li><span class="d">Feb 16</span><span class="s" aria-label="5 stars">★★★★★</span><span class="txt">Praises salvation by grace rather than works. It doesn’t address the book’s quotations.<span class="fmt">Paperback</span></span></li>
+        <li><span class="d">Feb 18</span><span class="s low" aria-label="2 stars">★★☆☆☆</span><span class="txt">A longtime Breaker viewer objects to the book’s quoting of Joyce Meyer and Joel Osteen, calling them wolves. Two people found it helpful. No later review was marked helpful.<span class="fmt">Listed as paperback; the reviewer’s text refers to a Kindle copy</span></span></li>
+        <li><span class="d">Feb 19</span><span class="s" aria-label="5 stars">★★★★★</span><span class="txt">“An absolute necessity” for those who want the true history of salvation by faith in the blood.<span class="fmt">Paperback</span></span></li>
+        <li><span class="d">Mar 7</span><span class="s" aria-label="5 stars">★★★★★</span><span class="txt">A gift for Spanish-speaking friends: “Without the Blood there is no remission.”<span class="fmt">Spanish edition, format not shown</span></span></li>
+        <li><span class="d">Mar 8</span><span class="s" aria-label="5 stars">★★★★★</span><span class="txt">“A must read,” lots of scripture, a great gift for someone unsaved.<span class="fmt">Paperback</span></span></li>
+        <li><span class="d">Apr 20</span><span class="s" aria-label="5 stars">★★★★★</span><span class="txt">“If you want to know about Christ, get the book.”<span class="fmt">Paperback</span></span></li>
+        <li><span class="d">May 9</span><span class="s" aria-label="5 stars">★★★★★</span><span class="txt">“Excellent!”<span class="fmt">Paperback</span></span></li>
+        <li><span class="d">Jul 18</span><span class="s" aria-label="5 stars">★★★★★</span><span class="txt">Praises the “historical evidence throughout the church age” and asks, “When do we get it in paperback?”<span class="fmt">Kindle</span></span></li>
+        <li><span class="d">Aug 16</span><span class="s" aria-label="5 stars">★★★★★</span><span class="txt">Praises Breaker and says the book “thoroughly documents the history of the Gospel.”<span class="fmt">Paperback</span></span></li>
+        <li><span class="d">Sep 9</span><span class="s" aria-label="5 stars">★★★★★</span><span class="txt">“Jesus, one time blood sacrifice for all. Read it.”<span class="fmt">Paperback</span></span></li>
+        <li><span class="d">Sep 25</span><span class="s" aria-label="5 stars">★★★★★</span><span class="txt">“Love this book!!… I follow him on YouTube.”<span class="fmt">Format not shown</span></span></li>
+      </ul>
+      <div class="obs">
+        <div><b>Observation 01</b><p>None of these reviews mentions the quote controversy, and the ratings stayed high afterward. The livestream did not seem to reach many buyers.</p></div>
+        <div><b>Observation 02</b><p>Several “paperback” reviews appear after the physical edition was pulled. They may reflect earlier purchases or third-party sellers (Breaker said third parties could still sell it), and the July 18 reviewer’s request for a paperback fits the physical edition being unavailable.</p></div>
+      </div>
+    </section>
+
+    <section id="standing">
+      <span class="sec-num">06</span>
+      <h2>Where things stand</h2>
+      <div class="standing">
+        <p>On October 2, 2026 I subscribed to Kindle Unlimited to read the current edition. It has not been updated. Chapters 8 and 9 are unchanged, and I found no correction or notice.</p>
+        <p>I take him at his word, that the original instance was just a sincere mistake. The problem is what came after: the accounts of who used the AI don’t match, “spirit of the quote” is not an acceptable defense for quotations in quotation marks, and digital copies, which are still on sale, carry fabricated attributions to Wesley, Chrysostom and others.</p>
+        <p>A real correction would mean:</p>
+        <ol class="fix">
+          <li>Pulling every edition.</li>
+          <li>Publishing the list of failed quotes.</li>
+          <li>Telling people who gave the book to others that its quotations can’t be relied on.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="appendix">
+      <span class="sec-num">07</span>
+      <h2>Appendix: Tony’s Chapter 8 spreadsheet</h2>
+      <div class="appendix">
+        <p>This spreadsheet is Tony’s work, not mine. Any notes marking a quote real, fake or unknown are his, except the Wesley correction noted above.</p>
+        <p>I am currently in the process of fact checking every quote he marked as unknown (31). I will edit the article to include that, when I have finished it.</p>
+        <a class="btn" href="https://blogs.crossmap.com/stories/robert-breakers-unbroken-chain-chapter-8-every-quote-fact-checked-Tmn8-4FjqzshMDQxkdJ3m" target="_blank" rel="noopener">View the original spreadsheet <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section id="sources">
+      <span class="sec-num">08</span>
+      <h2>Sources</h2>
+      <p class="src-note">“Advertisement” here means a video with the book’s Amazon link in the description.</p>
+      <div class="src-grid">
+        <div class="src">
+          <h3>Robert Breaker videos</h3>
+          <ol>
+            <li><a href="https://www.youtube.com/watch?v=ZVJuVcZWxW4" target="_blank" rel="noopener">My New Book is Now Out! Unbroken Chain Faith in the Blood<small>youtube.com/watch?v=ZVJuVcZWxW4</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=XCFlV5CUUYI" target="_blank" rel="noopener">Do All Baptists Preach Faith in the Blood?<small>youtube.com/watch?v=XCFlV5CUUYI</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=9zE58dYRabs" target="_blank" rel="noopener">Should Have Added This To My New Book!!!<small>youtube.com/watch?v=9zE58dYRabs</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=DU_UG9uuU-g" target="_blank" rel="noopener">Faith in the Blood has been Preached for 2000 Years Now!!!<small>youtube.com/watch?v=DU_UG9uuU-g</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=Xt60eIwKNyc" target="_blank" rel="noopener">Is This the Worst Gospel Tract Ever?<small>youtube.com/watch?v=Xt60eIwKNyc</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=_SzdlXon6X0" target="_blank" rel="noopener">Are you Deceived by Another Gospel?<small>youtube.com/watch?v=_SzdlXon6X0</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=1fXpqRyRpLQ" target="_blank" rel="noopener">Saved by Your Prayer?<small>youtube.com/watch?v=1fXpqRyRpLQ</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=582EXxp8RtM" target="_blank" rel="noopener">Never Stop Preaching Faith in the Blood!!!<small>youtube.com/watch?v=582EXxp8RtM</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=eZG2inFn_3U" target="_blank" rel="noopener">Learning About A.I. (How to Use It)<small>youtube.com/watch?v=eZG2inFn_3U</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=VXEcp4rj51c" target="_blank" rel="noopener">True Baptists Preach Faith in the Blood!!!<small>youtube.com/watch?v=VXEcp4rj51c</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=whJ_DSKBJvk" target="_blank" rel="noopener">AI or ARTIFICIAL INTELLIGENCE Walkin and A-Talking<small>youtube.com/watch?v=whJ_DSKBJvk</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=4-Sjncnblcc" target="_blank" rel="noopener">Will You Have Any Rewards in Heaven?<small>youtube.com/watch?v=4-Sjncnblcc</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=nc2WyYPv4l4" target="_blank" rel="noopener">Why I Wrote This Book!<small>youtube.com/watch?v=nc2WyYPv4l4</small></a></li>
+            <li><a href="https://www.youtube.com/watch?v=cIQao0nTp_0" target="_blank" rel="noopener">DON’T LET THE DEVIL WIN! Walkin and A-Talking<small>youtube.com/watch?v=cIQao0nTp_0</small></a></li>
+          </ol>
+        </div>
+        <div>
+          <div class="src">
+            <h3>Tony (Jeremiah333-JesusSaves)</h3>
+            <ol>
+              <li><a href="https://www.youtube.com/watch?v=QWFRK-7R8mM" target="_blank" rel="noopener">Robert Breaker book: The Unbroken Chain of Salvation by Faith in the Blood: WARNING!<small>youtube.com/watch?v=QWFRK-7R8mM</small></a></li>
+              <li><a href="https://www.youtube.com/watch?v=TeRglJlCZoI" target="_blank" rel="noopener">Robert Breaker’s new Book, Chapter 8<small>youtube.com/watch?v=TeRglJlCZoI</small></a></li>
+              <li><a href="https://www.youtube.com/watch?v=6oO7jeHrRsw" target="_blank" rel="noopener">A phone call with Mr. Robert Potthoff<small>youtube.com/watch?v=6oO7jeHrRsw</small></a></li>
+            </ol>
+          </div>
+          <div class="src" style="margin-top:2.5rem">
+            <h3>Amazon listings</h3>
+            <ol>
+              <li><a href="https://www.amazon.com/portal/customer-reviews/B0GC6YMQHY" target="_blank" rel="noopener">English edition<small>amazon.com/portal/customer-reviews/B0GC6YMQHY</small></a></li>
+              <li><a href="https://www.amazon.com/portal/customer-reviews/B0GH7Y1DTD" target="_blank" rel="noopener">Spanish edition<small>amazon.com/portal/customer-reviews/B0GH7Y1DTD</small></a></li>
+            </ol>
+          </div>
+          <div class="src" style="margin-top:2.5rem">
+            <h3>Other</h3>
+            <ol>
+              <li><a href="https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-16-the-means-of-grace/" target="_blank" rel="noopener">John Wesley, <i>The Means of Grace</i><small>wesley.nnu.edu</small></a></li>
+              <li><a href="https://web.archive.org/web/20130126115417/https://www.rrb3.com/Left/reasons_left_church.htm" target="_blank" rel="noopener">Breaker’s RRB3 pages on Ruckman (archived), part 1<small>web.archive.org · rrb3.com/Left/reasons_left_church.htm</small></a></li>
+              <li><a href="https://web.archive.org/web/20130126115417/https://www.rrb3.com/Left/ruckman_simplicity_quote.htm" target="_blank" rel="noopener">Breaker’s RRB3 pages on Ruckman (archived), part 2<small>web.archive.org · rrb3.com/Left/ruckman_simplicity_quote.htm</small></a></li>
+              <li><a href="https://www.thegospelcoalition.org/blogs/evangelical-history/ask-jesus-into-your-heart-a-history-of-the-sinners-prayer/" target="_blank" rel="noopener">Thomas Kidd, “‘Ask Jesus into Your Heart’: A History of the Sinner’s Prayer”<small>thegospelcoalition.org</small></a></li>
+              <li><a href="https://www.newadvent.org/fathers/1010.htm" target="_blank" rel="noopener">Clement of Rome, First Epistle, ch. 7<small>newadvent.org/fathers/1010.htm</small></a></li>
+              <li><a href="https://blogs.crossmap.com/stories/diodorus-of-tarsuss-full-commentary-on-romans-lPOug9d_kPrVSG_8fnjkE" target="_blank" rel="noopener">Diodore of Tarsus, commentary on Romans 10:11–13<small>blogs.crossmap.com</small></a></li>
+              <li><a href="https://www.newadvent.org/fathers/210110.htm" target="_blank" rel="noopener">John Chrysostom, Homily 10 on Acts<small>newadvent.org/fathers/210110.htm</small></a></li>
+              <li><a href="https://blogs.crossmap.com/stories/robert-breakers-unbroken-chain-fake-ai-quotes-VjK47MMVtsxwsv-s0ow9N" target="_blank" rel="noopener">My Chapter 9 audit<small>blogs.crossmap.com</small></a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer>
+  <span>The Unbroken Chain: A Timeline of the AI-Generated Quotes</span>
+  <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  try{var t=localStorage.getItem('theme'); if(t) root.setAttribute('data-theme',t);}catch(e){}
+  function isDark(){
+    var a=root.getAttribute('data-theme');
+    return a ? a==='dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function label(){btn.textContent=isDark()?'Light mode':'Dark mode';}
+  label();
+  btn.addEventListener('click',function(){
+    var next=isDark()?'light':'dark'; root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+    label();
+  });
+
+  var bar=document.getElementById('bar');
+  var links=[].slice.call(document.querySelectorAll('.toc a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
+    bar.style.width=(max>0?(h.scrollTop/max*100):0)+'%';
+    var cur=0;
+    secs.forEach(function(s,i){ if(s && s.getBoundingClientRect().top < window.innerHeight*0.3) cur=i; });
+    links.forEach(function(a,i){a.classList.toggle('active',i===cur);});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>
