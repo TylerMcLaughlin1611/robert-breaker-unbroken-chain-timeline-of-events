@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Unbroken Chain: A Timeline of the AI-Generated Quotes</title>
 <meta name="description" content="A documented timeline of the AI-generated quotations in Robert Breaker’s The Unbroken Chain of Salvation by Faith in The Blood.">
+<link rel="canonical" href="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-timeline-of-events/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-timeline-of-events/">
+<meta property="og:title" content="Robert Breaker’s The Unbroken Chain: A Timeline of the AI-Generated Quotes">
+<meta property="og:description" content="A documented timeline of the AI-generated quotations in Robert Breaker’s The Unbroken Chain of Salvation by Faith in The Blood.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Robert Breaker’s The Unbroken Chain: A Timeline of the AI-Generated Quotes">
+<meta name="twitter:description" content="A documented timeline of the AI-generated quotations in Robert Breaker’s The Unbroken Chain of Salvation by Faith in The Blood.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -62,12 +70,15 @@ a:hover{color:var(--blood)}
 .progress span{display:block;height:100%;width:0;background:var(--blood);transition:width .08s linear}
 
 /* masthead */
+.series{display:flex;align-items:center;flex-wrap:wrap;gap:.4rem 1.25rem}
+.series a{color:var(--ink-3);text-decoration:none;padding:.2rem 0}
+.series a:hover{color:var(--ink)}
+.series a[aria-current]{color:var(--ink);font-weight:600;box-shadow:inset 0 -2px 0 var(--blood)}
 .mast{
-  display:flex;justify-content:flex-end;align-items:center;gap:1rem;
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;
   padding:1rem clamp(1rem,4vw,3rem);border-bottom:1px solid var(--rule);
   font-family:var(--sans);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
 }
-.mast b{color:var(--ink);font-weight:600}
 .theme-btn{
   font:inherit;letter-spacing:.1em;background:none;border:1px solid var(--rule);color:var(--ink-2);
   padding:.4rem .7rem;border-radius:999px;cursor:pointer
@@ -79,11 +90,6 @@ a:hover{color:var(--blood)}
   padding:clamp(3rem,9vw,7.5rem) clamp(1rem,4vw,3rem) clamp(2.5rem,6vw,4.5rem);
   max-width:78rem;margin:0 auto;
 }
-.kicker{
-  font-family:var(--sans);font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--blood);display:flex;align-items:center;gap:.75rem;margin:0 0 1.75rem
-}
-.kicker::before{content:"";width:2.25rem;height:2px;background:var(--blood)}
 h1{
   font-family:var(--serif);font-weight:400;font-size:clamp(2.5rem,7.2vw,6rem);
   line-height:.98;letter-spacing:-.025em;margin:0;max-width:16ch;
@@ -125,6 +131,11 @@ h1 em{font-style:italic;color:var(--blood)}
 .legend .l-un::before{background:#b9a676}
 .legend .l-ok::before{background:#6fae8b}
 .legend b{font-family:var(--mono);font-weight:500}
+.stat-link{
+  display:inline-flex;align-items:center;gap:.45rem;margin-top:1.4rem;font-family:var(--sans);font-size:.85rem;font-weight:500;
+  color:inherit;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:.15rem;opacity:.9
+}
+.stat-link:hover{color:inherit;opacity:1;border-bottom-color:#c8443c}
 
 /* layout */
 .layout{
@@ -157,15 +168,6 @@ p{margin:0 0 1.15em}
   float:left;font-size:4.6em;line-height:.82;padding:.08em .1em 0 0;color:var(--blood);font-weight:400
 }
 .note{font-style:italic;color:var(--ink-2)}
-
-/* callouts */
-.ledger{display:grid;gap:1rem;margin:1.75rem 0;max-width:var(--measure)}
-@media (min-width:640px){.ledger{grid-template-columns:repeat(3,1fr)}}
-.ledger div{border-top:2px solid var(--ink);padding-top:.9rem}
-.ledger div:nth-child(2){border-color:var(--unknown)}
-.ledger div:nth-child(3){border-color:var(--blood)}
-.ledger strong{display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.5rem}
-.ledger p{font-size:.98rem;line-height:1.55;color:var(--ink-2);margin:0}
 
 .pull{
   margin:2.5rem 0;padding:0 0 0 1.5rem;border-left:3px solid var(--blood);
@@ -207,7 +209,6 @@ blockquote.source cite{display:block;margin-top:.9rem;font-family:var(--sans);fo
   content:"";position:absolute;left:-.33rem;top:.45rem;width:.65rem;height:.65rem;border-radius:50%;
   background:var(--paper);border:2px solid var(--ink-3)
 }
-@media (min-width:640px){.event-body::before{left:-.33rem}}
 .event.key .event-body::before{background:var(--blood);border-color:var(--blood);box-shadow:0 0 0 4px var(--blood-soft)}
 .event h4{font-family:var(--sans);font-size:1.02rem;font-weight:600;line-height:1.35;margin:.15rem 0 .6rem;letter-spacing:-.005em}
 .event h4 .tag{
@@ -233,8 +234,8 @@ blockquote.source cite{display:block;margin-top:.9rem;font-family:var(--sans);fo
 .pair .claimed .lbl{color:var(--blood)}
 .pair .actual .lbl{color:var(--verified)}
 .pair q{display:block;font-size:1rem;line-height:1.55;font-style:italic;quotes:"“" "”"}
-.pair .claimed q{text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--blood) 45%,transparent);text-decoration-thickness:1px}
-.pair .actual .muted{font-size:.95rem;color:var(--ink-2)}
+.pair .actual .muted{font-size:.95rem;color:var(--ink-2);margin:0}
+.pair .verdict{display:block;margin-top:.8rem;font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--blood)}
 
 /* reviews */
 .reviews{list-style:none;padding:0;margin:1.5rem 0;max-width:48rem;border-top:1px solid var(--rule)}
@@ -252,7 +253,8 @@ blockquote.source cite{display:block;margin-top:.9rem;font-family:var(--sans);fo
 @media (min-width:720px){.obs{grid-template-columns:1fr 1fr}}
 .obs div{padding:1.25rem;background:var(--card);border:1px solid var(--rule);border-radius:3px}
 .obs b{font-family:var(--mono);font-weight:500;color:var(--blood);font-size:.8rem;display:block;margin-bottom:.4rem}
-.obs p{font-size:1rem;margin:0;color:var(--ink-2)}
+.obs p{font-size:1rem;margin:0 0 .75em;color:var(--ink-2)}
+.obs p:last-child{margin-bottom:0}
 
 /* standing */
 .standing{
@@ -263,9 +265,6 @@ blockquote.source cite{display:block;margin-top:.9rem;font-family:var(--sans);fo
   font-family:var(--sans);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--blood)
 }
 .standing p:last-child{margin-bottom:0}
-.fix{list-style:none;padding:0;margin:1.5rem 0 0;counter-reset:f}
-.fix li{counter-increment:f;display:flex;gap:1rem;padding:.75rem 0;border-top:1px solid var(--rule);font-size:1.02rem}
-.fix li::before{content:counter(f,decimal-leading-zero);font-family:var(--mono);font-size:.78rem;color:var(--blood);padding-top:.25rem}
 
 /* appendix + sources */
 .appendix{background:var(--paper-2);border-radius:3px;padding:clamp(1.5rem,4vw,2.5rem);max-width:48rem}
@@ -296,14 +295,109 @@ footer a{color:var(--ink-2)}
   .stats{background:none;color:var(--ink);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
   body{font-size:11pt}
 }
+
+/* share */
+.share{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-top:1.75rem;font-family:var(--sans)}
+.share-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-right:.35rem}
+.share a,.share button{
+  font-family:var(--sans);font-size:.8rem;font-weight:500;line-height:1.2;padding:.4rem .8rem;border-radius:999px;cursor:pointer;
+  border:1px solid var(--rule);background:transparent;color:var(--ink-2);text-decoration:none
+}
+.share a:hover,.share button:hover{border-color:var(--ink-3);color:var(--ink)}
+.share a:focus-visible,.share button:focus-visible{outline:2px solid var(--blood);outline-offset:2px}
+.share .copy.done{border-color:var(--blood);color:var(--blood)}
+.share [hidden]{display:none}
+.share-end{max-width:78rem;margin:0 auto;padding:2.5rem clamp(1rem,4vw,3rem) 0}
+.share-end h2{font-size:clamp(1.5rem,3vw,2rem);margin:0}
+@media print{.share,.share-end{display:none}}
+
+/* share menu in the top bar */
+.mast-right{position:relative;display:flex;align-items:center;gap:.5rem}
+.share-btn{display:inline-flex;align-items:center;gap:.4rem}
+.share-btn[aria-expanded="true"]{border-color:var(--ink);color:var(--ink)}
+.share-pop{
+  position:absolute;right:0;top:calc(100% + .6rem);z-index:60;width:min(23rem,calc(100vw - 2rem));
+  padding:1rem 1.1rem 1.1rem;background:var(--paper);border:1px solid var(--rule);border-radius:6px;
+  box-shadow:0 12px 32px rgba(0,0,0,.14);text-transform:none;letter-spacing:normal
+}
+.share-pop[hidden]{display:none}
+.share-pop .share{margin-top:0}
+.share-pop .share-label{flex-basis:100%;margin-bottom:.15rem}
+
+/* top bar on phones: page links on one row, buttons on the next */
+.theme-btn{white-space:nowrap}
+@media (max-width:600px){
+  .mast{flex-wrap:wrap;row-gap:.8rem}
+  .series{flex-wrap:nowrap}
+  .mast-right{width:100%}
+}
+
+/* days-since counter */
+.ticker{background:var(--blood-soft);border-bottom:1px solid var(--rule);font-family:var(--sans);font-size:.88rem;color:var(--ink-2)}
+.ticker-inner{max-width:78rem;margin:0 auto;padding:.75rem clamp(1rem,4vw,3rem);display:flex;flex-wrap:wrap;align-items:center;gap:.45rem 1rem}
+.ticker-count{display:inline-flex;align-items:baseline;gap:.45rem}
+.ticker-count b{font-family:var(--mono);font-size:1.25rem;font-weight:500;color:var(--blood);line-height:1}
+.ticker-eds{display:inline-flex;flex-wrap:wrap;gap:.4rem}
+.ticker-eds span{
+  display:inline-flex;align-items:center;gap:.35rem;padding:.2rem .6rem;border-radius:999px;
+  border:1px solid color-mix(in srgb,var(--blood) 35%,transparent);color:var(--blood);font-size:.75rem;font-weight:600
+}
+.ticker-eds span::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:var(--blood)}
+.ticker small{color:var(--ink-3);font-size:.75rem}
+
+/* printing: always light, no controls, everything expanded */
+@media print{
+  :root:root:root{
+    --paper:#fff; --paper-2:#f3f0e8; --card:#fff;
+    --ink:#111; --ink-2:#333; --ink-3:#666; --rule:#ccc;
+    --blood:#8e1b1b; --blood-soft:#f6e6e2;
+  }
+  body{background:#fff}
+  .mast,.share-pop,.share,.share-end,.filters,.search,#empty,.no-results,.toc,.progress{display:none !important}
+  .layout{display:block;padding-top:1rem}
+  .stats{background:none !important;color:#111 !important}
+  .q,.card,.event,blockquote,.pair{break-inside:avoid}
+  a{text-decoration:none}
+}
 </style>
 </head>
 <body>
 <div class="progress" aria-hidden="true"><span id="bar"></span></div>
 
 <header class="mast">
-  <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">Theme</button>
+  <nav class="series" aria-label="The Unbroken Chain series">
+    <a href="#" aria-current="page">Timeline</a>
+    <a href="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-chapter-8-ai-quotes/">Chapter 8</a>
+    <a href="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-chapter-9-ai-quotes/">Chapter 9</a>
+  </nav>
+  <div class="mast-right">
+    <button class="theme-btn share-btn" id="shareBtn" type="button" aria-expanded="false" aria-controls="sharePop"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v8h16v-8"/><path d="M12 3v13"/><path d="m7 8 5-5 5 5"/></svg>Share</button>
+    <button class="theme-btn share-btn" id="printBtn" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="1"/><path d="M6 14h12v7H6z"/></svg>Print</button>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">Theme</button>
+    <div class="share-pop" id="sharePop" hidden>
+      <div class="share" data-url="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-timeline-of-events/" data-title="Robert Breaker’s The Unbroken Chain: A Timeline of the AI-Generated Quotes" aria-label="Share this page">
+    <span class="share-label">Share this page</span>
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F&amp;text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes" target="_blank" rel="noopener noreferrer">X</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.reddit.com/submit?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F&amp;title=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes" target="_blank" rel="noopener noreferrer">Reddit</a>
+    <a href="https://wa.me/?text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes%20https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F&amp;text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes" target="_blank" rel="noopener noreferrer">Telegram</a>
+    <a href="https://bsky.app/intent/compose?text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes%20https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">Bluesky</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="mailto:?subject=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes&amp;body=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes%0A%0Ahttps%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F">Email</a>
+    <button type="button" class="copy">Copy link</button>
+    <button type="button" class="native" hidden>More…</button>
+  </div>
+    </div>
+  </div>
 </header>
+<div class="ticker" id="ticker" data-since="2026-02-16" data-checked="2026-11-07" role="status">
+  <div class="ticker-inner">
+    <span class="ticker-count"><b id="daysUp">264</b><span><span id="daysWord">days</span> since Robert Breaker said he had unpublished the book (February 16, 2026)</span></span>
+    <span class="ticker-eds"><span>English Kindle: still on sale</span><span>Spanish Kindle: still on sale</span></span>
+    <small>Last checked <span id="checkedDate">November 7, 2026</span></small>
+  </div>
+</div>
 
 <div class="hero">
   <h1>Robert Breaker’s <em>The Unbroken Chain</em> of Salvation</h1>
@@ -311,7 +405,20 @@ footer a{color:var(--ink-2)}
   <div class="meta">
     <div><strong>Book released</strong>December 22, 2025</div>
     <div><strong>Unpublished (in part)</strong>February 16, 2026</div>
-    <div><strong>Kindle edition last checked</strong>October 2, 2026</div>
+    <div><strong>Kindle editions last checked</strong>November 7, 2026</div>
+  </div>
+  <div class="share" data-url="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-timeline-of-events/" data-title="Robert Breaker’s The Unbroken Chain: A Timeline of the AI-Generated Quotes" aria-label="Share this page">
+    <span class="share-label">Share</span>
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F&amp;text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes" target="_blank" rel="noopener noreferrer">X</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.reddit.com/submit?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F&amp;title=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes" target="_blank" rel="noopener noreferrer">Reddit</a>
+    <a href="https://wa.me/?text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes%20https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F&amp;text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes" target="_blank" rel="noopener noreferrer">Telegram</a>
+    <a href="https://bsky.app/intent/compose?text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes%20https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">Bluesky</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="mailto:?subject=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes&amp;body=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes%0A%0Ahttps%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F">Email</a>
+    <button type="button" class="copy">Copy link</button>
+    <button type="button" class="native" hidden>More…</button>
   </div>
 </div>
 
@@ -325,6 +432,7 @@ footer a{color:var(--ink-2)}
         <i class="ai" style="flex:44"></i><i class="un" style="flex:31"></i><i class="ok" style="flex:3"></i>
       </div>
       <div class="legend"><span class="l-ai"><b>44</b> AI-generated</span><span class="l-un"><b>31</b> unverified</span><span class="l-ok"><b>3</b> genuine</span></div>
+      <a class="stat-link" href="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-chapter-8-ai-quotes/" target="_blank" rel="noopener">Read the Chapter 8 audit <span aria-hidden="true">→</span></a>
     </div>
     <div>
       <p class="stat-label">Chapter 9 · 91 quotes</p>
@@ -334,6 +442,7 @@ footer a{color:var(--ink-2)}
         <i class="ai" style="flex:87"></i><i class="un" style="flex:4"></i>
       </div>
       <div class="legend"><span class="l-ai"><b>87</b> AI-generated</span><span class="l-un"><b>4</b> unverified</span><span class="l-ok"><b>0</b> genuine</span></div>
+      <a class="stat-link" href="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-chapter-9-ai-quotes/" target="_blank" rel="noopener">Read the Chapter 9 audit <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </div>
@@ -343,12 +452,10 @@ footer a{color:var(--ink-2)}
     <p>Contents</p>
     <ol>
       <li><a href="#summary">Summary</a></li>
-      <li><a href="#establish">What I can and can’t establish</a></li>
-      <li><a href="#listing">The book and its listing</a></li>
       <li><a href="#timeline">Timeline</a></li>
-      <li><a href="#reviews">What the Amazon reviews show</a></li>
-      <li><a href="#standing">Where things stand</a></li>
-      <li><a href="#appendix">Appendix</a></li>
+      <li><a href="#reviews">The Amazon reviews</a></li>
+      <li><a href="#standing">Current happenings</a></li>
+      <li><a href="#appendix">Tony’s Chapter 8 spreadsheet</a></li>
       <li><a href="#sources">Sources</a></li>
     </ol>
   </nav>
@@ -360,40 +467,13 @@ footer a{color:var(--ink-2)}
       <p class="lede">On December 22, 2025, Robert Breaker released <i>The Unbroken Chain of Salvation by Faith in The Blood</i>, a book that says it documents twenty centuries of preachers teaching salvation by faith in the blood of Christ.</p>
       <p>Many of the book’s quotations were generated by an AI chatbot rather than taken from the historical sources. By Breaker’s and Robert Potthoff’s own descriptions, an AI was asked to produce “verbatim quotes.” In my audit, only 3 of Chapter 8’s 78 quotes are genuine; 44 are AI-generated and 31 could not be verified. In Chapter 9, 87 of 91 quotes appear to be AI-generated and 4 could not be verified.</p>
       <p>On February 16, 2026, Breaker said on a livestream that he had unpublished the book and wanted to fix it. The physical editions were pulled, but the English and Spanish digital editions stayed on sale. The Kindle edition I read on October 2, 2026 had not been revised.</p>
-    </section>
-
-    <section id="establish">
-      <span class="sec-num">02</span>
-      <h2>What I can and can’t establish</h2>
-      <div class="ledger">
-        <div>
-          <strong>Established</strong>
-          <p>From primary sources: the dates, videos and listings below; what Breaker and Potthoff said on camera; and the fact that the quotes discussed here do not appear in the sources they are credited to.</p>
-        </div>
-        <div>
-          <strong>Someone else’s work</strong>
-          <p>The Chapter 8 spreadsheet was built by Tony (YouTube: Jeremiah333-JesusSaves). It is credited to him, and the appendix is his work, not mine.</p>
-        </div>
-        <div>
-          <strong>Speculation</strong>
-          <p>My speculation is marked when it appears, I.E why Robert Breaker hasn't removed it.</p>
-        </div>
-      </div>
-      <div class="prose">
-        <p>I corresponded with Tony early in 2026; we are no longer in contact, and nothing in this article depends on anything he told me privately. His actions do not represent me.</p>
-        <p class="note">I have written critically of Breaker’s soteriology before (the series <i>Robert Breaker’s Salvation Theology Is a Modern Doctrine</i>). I am not a neutral party, however I have tried to let the primary sources carry the argument.</p>
-      </div>
-    </section>
-
-    <section id="listing" class="prose">
-      <span class="sec-num">03</span>
-      <h2>The book and its listing</h2>
+      <p class="note">My speculation is marked when it appears, I.E why Robert Breaker hasn't removed it.</p>
       <p>The Amazon description calls the book “thoroughly documented” and says it draws on “modern A.I. search engine analysis.” It also promises to show “why A.I. itself confesses” that faith in the blood is necessary to be saved.</p>
       <p class="pull">So the book advertised its use of AI from day one. What the listing did not say is that AI was also used to produce quotations attributed to historical figures.</p>
     </section>
 
     <section id="timeline">
-      <span class="sec-num">04</span>
+      <span class="sec-num">02</span>
       <h2>Timeline</h2>
       <div class="timeline">
 
@@ -418,16 +498,11 @@ footer a{color:var(--ink-2)}
             <h4>“Do All Baptists Preach Faith in the Blood?”</h4>
             <p>Breaker says that asking Jesus into your heart or praying for salvation comes from Unitarianism and Universalism. Two things are worth checking.</p>
             <p>Church historian Thomas Kidd, in “‘Ask Jesus into Your Heart’: A History of the Sinner’s Prayer” (<i>The Gospel Coalition</i>), traces that language to Puritan and evangelical roots, not Unitarian or Universalist ones. I checked his research and it holds up.</p>
-            <p>Early Christian writers describe asking and praying to God for salvation. Two examples:</p>
+            <p>Early Christian writers describe asking and praying to God for salvation. One example:</p>
             <blockquote class="source">
               <p>“Jonah proclaimed destruction to the Ninevites; but they, repenting of their sins, propitiated God by prayer, and obtained salvation, although they were aliens of God.”</p>
               <cite>Clement of Rome, 1 Clement 7, c. 96–97 A.D.</cite>
             </blockquote>
-            <blockquote class="source">
-              <p>“Necessarily he set forth ‘those who call upon him.’ For God does not give grace without discernment, extending it even to those who are unwilling to offer so much to the Benefactor as at least to ask and pray with him. And lest anyone say that many fail to call upon the Lord Jesus out of ignorance rather than unbelief and ingratitude, he shows through what follows that God took away even the excuse of their ignorance, sending evangelists and heralds who urge and invite them to ask for the gift. Therefore he added what follows.”</p>
-              <cite>Diodore of Tarsus, on Romans 10:11–13, 4th century</cite>
-            </blockquote>
-            <p>They make it hard to call asking God for salvation a modern invention.</p>
           </div>
         </div>
 
@@ -452,7 +527,7 @@ footer a{color:var(--ink-2)}
           <time><b>30</b>Dec 2025</time>
           <div class="event-body">
             <h4>“Are you Deceived by Another Gospel?”</h4>
-            <p>Breaker reads from notes in an 1800s family Bible that a viewer sent him. I can’t find those notes online, and there is no way to verify what the Bible says beyond Breaker’s word. (I discuss this in Part 4 of my series.)</p>
+            <p>Breaker reads from notes in an 1800s family Bible that a viewer sent him. I can’t find those notes online, and there is no way to verify what the Bible says beyond Breaker’s word. (I discuss this in Part 4 of my series <i>Robert Breaker’s Salvation Theology Is a Modern Doctrine</i>.)</p>
           </div>
         </div>
 
@@ -470,7 +545,7 @@ footer a{color:var(--ink-2)}
           <time><b>15</b>Jan 2026</time>
           <div class="event-body">
             <h4>“Saved by Your Prayer?”</h4>
-            <p>Breaker presents 52 quotes from historical figures said to deny the sinner’s prayer. As far as I can tell, only one of the 52 is real, and it has been modified; the other 51 trace back only to Breaker. They share a pattern: deny the sinner’s prayer, affirm the blood. That pattern is my reason for suspecting more AI-generated quotes. This is a provisional finding, and the full results will come in a separate series.</p>
+            <p>Breaker presents 52 quotes from historical figures said to deny the sinner’s prayer. As far as I can tell, only one of the 52 is real, and it has been modified; the other 51 trace back only to Breaker. They share a pattern: deny the sinner’s prayer, affirm the blood. Meaning, they are also likely AI-generated quotes.</p>
           </div>
         </div>
 
@@ -486,11 +561,12 @@ footer a{color:var(--ink-2)}
                   <div class="who">Gregory the Great, c. 600</div>
                   <div class="lbl">As quoted in the book</div>
                   <q>Not the ceremonies of man, but faith in His sacrifice.</q>
+                  <span class="verdict">AI-generated</span>
                 </div>
                 <div class="actual">
                   <div class="who">&nbsp;</div>
                   <div class="lbl">The record</div>
-                  <p class="muted">Gregory was a pope, which is an odd witness for a Baptist argument, and this quotation does not check out.</p>
+                  <p class="muted">Gregory was a pope, which is an odd witness for a Baptist argument, and this quotation is also AI-generated.</p>
                 </div>
               </div>
               <div class="pair">
@@ -498,10 +574,11 @@ footer a{color:var(--ink-2)}
                   <div class="who">John Wesley</div>
                   <div class="lbl">As quoted in the book</div>
                   <q>By faith in His blood. Through faith in His blood, here lies the way to justification: not by merit nor penance, but by a believing trust in the blood of Jesus Christ.</q>
+                  <span class="verdict">Another AI-generated quote</span>
                 </div>
                 <div class="actual">
                   <div class="who"><i>The Means of Grace</i></div>
-                  <div class="lbl">What Wesley actually taught</div>
+                  <div class="lbl">This is real Wesley</div>
                   <q>all who desire the grace of God are to wait for it in the way of prayer… Ask, and it shall be given you.</q>
                 </div>
               </div>
@@ -510,6 +587,7 @@ footer a{color:var(--ink-2)}
                   <div class="who">John Chrysostom, c. 400</div>
                   <div class="lbl">As quoted in the book</div>
                   <q>The blood has done everything… Let us then come boldly, not trusting ourselves, but trusting the blood.</q>
+                  <span class="verdict">Another AI-generated quote</span>
                 </div>
                 <div class="actual">
                   <div class="who">Homily 10 on Acts</div>
@@ -518,8 +596,8 @@ footer a{color:var(--ink-2)}
                 </div>
               </div>
             </div>
-            <p>In the same video Breaker says, “I never found any quote of them saying, ‘Just ask Jesus into your heart,’ or ‘Ask God to save you.’” The Wesley, Chrysostom, Clement and Diodore passages above all describe asking God for salvation.</p>
-            <p><b>A note on timing:</b> While he said he had quotes from historical figures, only 3 of the entire 78 quotes were real, and those were on the Eucharist. And of those quotes, he said that the AI was implicitly mistaken about the "blood in the cup" and the blood on the cross. So those aren't applicable.</p>
+            <p>In the same video Breaker says, “I never found any quote of them saying, ‘Just ask Jesus into your heart,’ or ‘Ask God to save you.’”</p>
+            <p>While he said he had quotes from historical figures, only 3 of the entire 78 quotes were real, and those were on the Eucharist. And of those quotes, he said that the AI was implicitly mistaken about the "blood in the cup" (his wording for the Eucharist) and the blood on the cross (his theology). So those aren't applicable.</p>
           </div>
         </div>
 
@@ -535,12 +613,13 @@ footer a{color:var(--ink-2)}
           <time><b>24</b>Jan 2026</time>
           <div class="event-body">
             <h4>“Never Stop Preaching Faith in the Blood!!!”</h4>
-            <p>In this video, which links the book in its description, Breaker responds to critics: “I’m not making these up… These books are out there. You can find them.” He says he has 35 pages of Dr. Ruckman quotes about the blood on his RRB3 site. I couldn’t find 35 pages. What I did find is a page quoting Ruckman’s <i>The Simplicity of Salvation</i> (1987): “If you don’t know that, it’s because you are lost.” The same book ends with an invitation to pray:</p>
+            <p>In this video, which links the book in its description, Breaker responds to critics: “I’m not making these up… These books are out there. You can find them.” He says he has 35 pages of Dr. Ruckman quotes about the blood on his RRB3 site. I couldn’t find 35 pages. What I did find is a page quoting Ruckman’s <i>The Simplicity of Salvation</i> (1987).</p>
+            <p>However, at the end of the book, Dr. Ruckman says this: “If you don’t know that, it’s because you are lost.” The same book ends with an invitation to pray:</p>
             <blockquote class="source">
               <p>“Wherever you are, bow your head and pray a simple prayer something like this: ‘Lord Jesus, I know I am a sinner, and unless you save me, I am lost forever. I now come to you, the best way I know how, and ask you to save me.’”</p>
               <cite>Peter S. Ruckman, <i>The Simplicity of Salvation</i> (1987)</cite>
             </blockquote>
-            <p>This is the pattern of selective quotation I describe in my earlier series: sources are cited for the blood while the rest of their teaching is left out.</p>
+            <p>See the quote mining.</p>
           </div>
         </div>
 
@@ -548,7 +627,7 @@ footer a{color:var(--ink-2)}
           <time><b>27</b>Jan 2026</time>
           <div class="event-body">
             <h4>“Robert Breaker’s new Book, Chapter 8”</h4>
-            <p>Tony publishes a video that goes through a spreadsheet of every Chapter 8 quote and finds all but three of the 78 to be fake. The spreadsheet is reproduced in the appendix, with his permission and credit. At my request he corrected the John Wesley entry.</p>
+            <p>Tony publishes a video that goes through a spreadsheet of every Chapter 8 quote and finds all but three of the 78 to be fake. The spreadsheet is reproduced in the appendix, with his permission and credit. For transparency, I had to correct him on John Wesley.</p>
             <p class="note">Note on Wesley: Tony’s notes on Wesley conflate Wesley’s view of confession in Romans 10 with petitionary salvation. Wesley did teach that people should ask God for grace as a means of grace, but he did not harmonize that with his comments on Romans 10.</p>
           </div>
         </div>
@@ -563,15 +642,15 @@ footer a{color:var(--ink-2)}
             <ul>
               <li><strong>The accounts of who used the AI conflict.</strong> Breaker says he was overextended, that he “went to brother Potthoff” to fill in missing material, and that Potthoff “went to AI.” Potthoff says he prompted the AI to produce verbatim quotes and then twice asked it to verify them. By June 2 Breaker is saying, “I went to AI and asked for some truths.” The livestream and the June video can’t both be the whole story.</li>
               <li><strong>“The spirit of the quote.”</strong> Potthoff says the AI sometimes “gave me the spirit of the quote instead of the actual quote,” because some sources were in Latin or Greek and were translated. A quotation in quotation marks is a claim that those are the words in the source. A language model can’t supply the spirit of a text it hasn’t read.</li>
-              <li>Potthoff says the only method he would recommend is using agent mode, one person at a time, with the AI showing where it found each quote. Neither man says that was done for Chapter 8, which suggests it was ordinary prompting (which is not connected to RAG).</li>
+              <li>Potthoff says the only method he would recommend is using agent mode, one person at a time, with the AI showing where it found each quote. Neither man says that was done for Chapter 8, which suggests it was ordinary prompting (I.E not using RAG/searching the internet with an LLM).</li>
               <li><strong>What Breaker admitted.</strong> He said he trusted the AI, that “some of them are paraphrases without a doubt and some may even be made up,” and that he wasn’t comfortable with that doubt. He told listeners they could ask Amazon for refunds, said he had unpublished the book, and said he would rewrite it.</li>
               <li>He also tried to explain some of the quotes by saying AI had pulled Roman Catholic statements about the blood in the sacrament, “the wrong blood,” and leaned on Augustine, whose wider soteriology is not a Baptist one. That is only applicable to the three out of context quotes, the remaining 75 are just fake.</li>
-              <li><strong>What was and wasn’t taken down.</strong> The physical English and Spanish editions were pulled. The digital English and Spanish editions were not. I can’t say why. It may be oversight, HOWEVER Breaker has said he follows his sales figures. As of October 2, 2026, the Kindle edition was still on sale.</li>
+              <li>The physical English and Spanish editions were pulled. The digital English and Spanish editions were not. I can’t say why. It may be oversight, HOWEVER Breaker has said he follows his sales figures. As of October 2, 2026, the Kindle edition was still on sale.</li>
             </ul>
           </div>
         </div>
 
-        <div class="month"><h3>March – June 2026</h3><span></span></div>
+        <div class="month"><h3>March to June 2026</h3><span></span></div>
 
         <div class="event">
           <time><b>1</b>Mar 2026</time>
@@ -595,7 +674,7 @@ footer a{color:var(--ink-2)}
           <time><b>14</b>Jul 2026</time>
           <div class="event-body">
             <h4>“DON’T LET THE DEVIL WIN! Walkin and A-Talking”</h4>
-            <p>The thumbnail appears to be AI-generated: Breaker looks on while a devil figure is trampled by a foot belonging to Jesus. To my eye the devil resembles a television personality who shares my name, Tyler McLaughlin of <i>Wicked Tuna</i>. I can’t know the prompt, and I can’t say it was aimed at me. An image generator given a name will often reproduce a well-known namesake, which may be all that happened. I include it because it fits a pattern: Breaker said on June 2 that he uses AI for thumbnails, and he kept doing so.</p>
+            <p>The thumbnail appears to be AI-generated: Breaker looks on while a devil figure is trampled by a foot belonging to Jesus. The devil resembles a television fisherman (and far more popular) who shares my name, Tyler McLaughlin of <i>Wicked Tuna</i>. Breaker said on June 2 that he uses AI for thumbnails.</p>
           </div>
         </div>
 
@@ -603,8 +682,8 @@ footer a{color:var(--ink-2)}
     </section>
 
     <section id="reviews">
-      <span class="sec-num">05</span>
-      <h2>What the Amazon reviews show</h2>
+      <span class="sec-num">03</span>
+      <h2>The Amazon reviews</h2>
       <div class="prose">
         <p>Here are the reviews since the livestream, in order. Reviewer names are omitted. All are on the English edition unless noted, and “paperback” and “Kindle” are the format Amazon displays.</p>
       </div>
@@ -623,37 +702,31 @@ footer a{color:var(--ink-2)}
       </ul>
       <div class="obs">
         <div><b>Observation 01</b><p>None of these reviews mentions the quote controversy, and the ratings stayed high afterward. The livestream did not seem to reach many buyers.</p></div>
-        <div><b>Observation 02</b><p>Several “paperback” reviews appear after the physical edition was pulled. They may reflect earlier purchases or third-party sellers (Breaker said third parties could still sell it), and the July 18 reviewer’s request for a paperback fits the physical edition being unavailable.</p></div>
+        <div><b>Observation 02</b><p>Several "paperback" reviews appear after the physical edition was pulled. They may be because of earlier purchases or third-party sellers (Breaker said third parties could still sell it), and the July 18 reviewer’s request for a paperback fits the physical edition being unavailable.</p><p>However, the July 18 Kindle review means Robert Breaker is still getting money for it.</p></div>
       </div>
     </section>
 
     <section id="standing">
-      <span class="sec-num">06</span>
-      <h2>Where things stand</h2>
+      <span class="sec-num">04</span>
+      <h2>Current happenings</h2>
       <div class="standing">
         <p>On October 2, 2026 I subscribed to Kindle Unlimited to read the current edition. It has not been updated. Chapters 8 and 9 are unchanged, and I found no correction or notice.</p>
-        <p>I take him at his word, that the original instance was just a sincere mistake. The problem is what came after: the accounts of who used the AI don’t match, “spirit of the quote” is not an acceptable defense for quotations in quotation marks, and digital copies, which are still on sale, carry fabricated attributions to Wesley, Chrysostom and others.</p>
-        <p>A real correction would mean:</p>
-        <ol class="fix">
-          <li>Pulling every edition.</li>
-          <li>Publishing the list of failed quotes.</li>
-          <li>Telling people who gave the book to others that its quotations can’t be relied on.</li>
-        </ol>
+        <p>Even conceding that he didn't know right from wrong when using AI, he never actually pulled the digital versions in either English or Spanish. The online versions are still getting sales, and he clearly admitted to having seen the Amazon book sales dashboard earlier, so he is aware that the book is getting sales. Yet he is still doing nothing, despite A. promising to pull the book and B. not actually giving refunds!</p>
       </div>
     </section>
 
     <section id="appendix">
-      <span class="sec-num">07</span>
-      <h2>Appendix: Tony’s Chapter 8 spreadsheet</h2>
+      <span class="sec-num">05</span>
+      <h2>Tony’s Chapter 8 spreadsheet</h2>
       <div class="appendix">
         <p>This spreadsheet is Tony’s work, not mine. Any notes marking a quote real, fake or unknown are his, except the Wesley correction noted above.</p>
         <p>I am currently in the process of fact checking every quote he marked as unknown (31). I will edit the article to include that, when I have finished it.</p>
-        <a class="btn" href="https://blogs.crossmap.com/stories/robert-breakers-unbroken-chain-chapter-8-every-quote-fact-checked-Tmn8-4FjqzshMDQxkdJ3m" target="_blank" rel="noopener">View the original spreadsheet <span aria-hidden="true">→</span></a>
+        <a class="btn" href="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-chapter-8-ai-quotes/" target="_blank" rel="noopener">Read the Chapter 8 audit <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
     <section id="sources">
-      <span class="sec-num">08</span>
+      <span class="sec-num">06</span>
       <h2>Sources</h2>
       <p class="src-note">“Advertisement” here means a video with the book’s Amazon link in the description.</p>
       <div class="src-grid">
@@ -702,7 +775,8 @@ footer a{color:var(--ink-2)}
               <li><a href="https://www.newadvent.org/fathers/1010.htm" target="_blank" rel="noopener">Clement of Rome, First Epistle, ch. 7<small>newadvent.org/fathers/1010.htm</small></a></li>
               <li><a href="https://blogs.crossmap.com/stories/diodorus-of-tarsuss-full-commentary-on-romans-lPOug9d_kPrVSG_8fnjkE" target="_blank" rel="noopener">Diodore of Tarsus, commentary on Romans 10:11–13<small>blogs.crossmap.com</small></a></li>
               <li><a href="https://www.newadvent.org/fathers/210110.htm" target="_blank" rel="noopener">John Chrysostom, Homily 10 on Acts<small>newadvent.org/fathers/210110.htm</small></a></li>
-              <li><a href="https://blogs.crossmap.com/stories/robert-breakers-unbroken-chain-fake-ai-quotes-VjK47MMVtsxwsv-s0ow9N" target="_blank" rel="noopener">My Chapter 9 audit<small>blogs.crossmap.com</small></a></li>
+              <li><a href="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-chapter-8-ai-quotes/" target="_blank" rel="noopener">My Chapter 8 audit<small>tylermclaughlin1611.github.io</small></a></li>
+              <li><a href="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-chapter-9-ai-quotes/" target="_blank" rel="noopener">My Chapter 9 audit<small>tylermclaughlin1611.github.io</small></a></li>
             </ol>
           </div>
         </div>
@@ -710,6 +784,23 @@ footer a{color:var(--ink-2)}
     </section>
   </article>
 </main>
+
+<div class="share-end">
+  <h2>Share this page</h2>
+  <div class="share" data-url="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-timeline-of-events/" data-title="Robert Breaker’s The Unbroken Chain: A Timeline of the AI-Generated Quotes" aria-label="Share this page">
+    <span class="share-label">Send it to</span>
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F&amp;text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes" target="_blank" rel="noopener noreferrer">X</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.reddit.com/submit?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F&amp;title=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes" target="_blank" rel="noopener noreferrer">Reddit</a>
+    <a href="https://wa.me/?text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes%20https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F&amp;text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes" target="_blank" rel="noopener noreferrer">Telegram</a>
+    <a href="https://bsky.app/intent/compose?text=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes%20https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">Bluesky</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="mailto:?subject=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes&amp;body=Robert%20Breaker%E2%80%99s%20The%20Unbroken%20Chain%3A%20A%20Timeline%20of%20the%20AI-Generated%20Quotes%0A%0Ahttps%3A%2F%2Ftylermclaughlin1611.github.io%2Frobert-breaker-unbroken-chain-timeline-of-events%2F">Email</a>
+    <button type="button" class="copy">Copy link</button>
+    <button type="button" class="native" hidden>More…</button>
+  </div>
+</div>
 
 <footer>
   <span>The Unbroken Chain: A Timeline of the AI-Generated Quotes</span>
@@ -744,6 +835,81 @@ footer a{color:var(--ink-2)}
   }
   window.addEventListener('scroll',onScroll,{passive:true});
   onScroll();
+})();
+</script>
+
+<script>
+(function(){
+  // share bars: copy link, and the phone's own share sheet where available
+  document.querySelectorAll('.share').forEach(function(box){
+    var url=box.getAttribute('data-url'), title=box.getAttribute('data-title');
+    var copy=box.querySelector('.copy');
+    copy.addEventListener('click',function(){
+      function done(){copy.textContent='Link copied';copy.classList.add('done');
+        setTimeout(function(){copy.textContent='Copy link';copy.classList.remove('done');},2000);}
+      try{ navigator.clipboard.writeText(url).then(done,fallback); }catch(e){ fallback(); }
+      function fallback(){
+        var t=document.createElement('textarea'); t.value=url; t.setAttribute('readonly','');
+        t.style.position='fixed'; t.style.opacity='0'; document.body.appendChild(t); t.select();
+        try{document.execCommand('copy'); done();}catch(e){ window.prompt('Copy this link:',url); }
+        document.body.removeChild(t);
+      }
+    });
+    var native=box.querySelector('.native');
+    if(navigator.share){
+      native.hidden=false;
+      native.addEventListener('click',function(){ navigator.share({title:title,url:url}).catch(function(){}); });
+    }
+  });
+})();
+</script>
+
+<script>
+(function(){
+  // top-bar Share menu
+  var btn=document.getElementById('shareBtn'), pop=document.getElementById('sharePop');
+  if(!btn||!pop) return;
+  function set(open){ pop.hidden=!open; btn.setAttribute('aria-expanded',open?'true':'false'); }
+  btn.addEventListener('click',function(e){ e.stopPropagation(); set(pop.hidden); });
+  document.addEventListener('click',function(e){ if(!pop.hidden && !pop.contains(e.target)) set(false); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape' && !pop.hidden){ set(false); btn.focus(); } });
+})();
+</script>
+
+<script>
+(function(){
+  // Print button, and print the whole page even if a search or filter is active
+  var btn=document.getElementById('printBtn');
+  if(btn) btn.addEventListener('click',function(){ window.print(); });
+  var hidden=[], closed=[];
+  window.addEventListener('beforeprint',function(){
+    hidden=[].slice.call(document.querySelectorAll('.q[hidden],.card[hidden]'));
+    hidden.forEach(function(el){el.hidden=false;});
+    closed=[].slice.call(document.querySelectorAll('details:not([open])'));
+    closed.forEach(function(d){d.open=true;});
+    document.querySelectorAll('.era').forEach(function(e){e.dataset.d=e.style.display;e.style.display='';});
+  });
+  window.addEventListener('afterprint',function(){
+    hidden.forEach(function(el){el.hidden=true;});
+    closed.forEach(function(d){d.open=false;});
+    document.querySelectorAll('.era').forEach(function(e){e.style.display=e.dataset.d||'';});
+  });
+})();
+</script>
+
+<script>
+(function(){
+  // days-since counter: counts whole calendar days from the date in data-since to today.
+  // To update after re-checking Amazon, change data-checked on #ticker (YYYY-MM-DD).
+  var el=document.getElementById('ticker'); if(!el) return;
+  function day(s){var p=s.split('-');return Date.UTC(+p[0],+p[1]-1,+p[2]);}
+  var now=new Date(), today=Date.UTC(now.getFullYear(),now.getMonth(),now.getDate());
+  var n=Math.max(0,Math.round((today-day(el.getAttribute('data-since')))/864e5));
+  document.getElementById('daysUp').textContent=n.toLocaleString('en-US');
+  document.getElementById('daysWord').textContent=n===1?'day':'days';
+  var c=el.getAttribute('data-checked').split('-');
+  document.getElementById('checkedDate').textContent=new Date(Date.UTC(+c[0],+c[1]-1,+c[2]))
+    .toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'});
 })();
 </script>
 </body>
