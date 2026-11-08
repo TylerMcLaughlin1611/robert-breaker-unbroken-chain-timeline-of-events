@@ -345,6 +345,14 @@ footer a{color:var(--ink-2)}
 .ticker-eds span::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:var(--blood)}
 .ticker small{color:var(--ink-3);font-size:.75rem}
 
+/* quick facts */
+.facts{border:1px solid var(--ink);border-radius:3px;padding:clamp(1.25rem,3vw,2rem);max-width:48rem;background:var(--card)}
+.facts h2{font-family:var(--sans);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--blood);margin:0 0 1.1rem;max-width:none}
+.facts dl{margin:0;display:grid;grid-template-columns:10rem minmax(0,1fr);gap:.7rem 1.5rem}
+.facts dt{font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--ink-2);padding-top:.2rem;line-height:1.35}
+.facts dd{margin:0;font-size:1.02rem;line-height:1.5}
+@media (max-width:560px){.facts dl{grid-template-columns:1fr;gap:.1rem}.facts dd{margin-bottom:.7rem}}
+
 /* printing: always light, no controls, everything expanded */
 @media print{
   :root:root:root{
@@ -451,16 +459,29 @@ footer a{color:var(--ink-2)}
   <nav class="toc" aria-label="Contents">
     <p>Contents</p>
     <ol>
+      <li><a href="#facts">Quick facts</a></li>
       <li><a href="#summary">Summary</a></li>
       <li><a href="#timeline">Timeline</a></li>
       <li><a href="#reviews">The Amazon reviews</a></li>
       <li><a href="#standing">Current happenings</a></li>
-      <li><a href="#appendix">Tony’s Chapter 8 spreadsheet</a></li>
       <li><a href="#sources">Sources</a></li>
     </ol>
   </nav>
 
   <article>
+    <section id="facts" class="facts" aria-labelledby="facts-h">
+      <h2 id="facts-h">Quick facts</h2>
+      <dl>
+        <dt>Book</dt><dd><em>The Unbroken Chain of Salvation by Faith in The Blood</em> by Robert Breaker, released December 22, 2025, in English and Spanish.</dd>
+        <dt>The book’s claim</dt><dd>That preachers have taught salvation by faith in the blood of Christ in an unbroken chain for twenty centuries, documented with quotations.</dd>
+        <dt>Chapter 8</dt><dd>3 of 78 quotes are genuine; 44 are AI-generated and 31 could not be verified.</dd>
+        <dt>Chapter 9</dt><dd>87 of 91 quotes appear to be AI-generated; the other 4 could not be verified.</dd>
+        <dt>How it happened</dt><dd>On a February 16, 2026 livestream, Breaker and Robert Potthoff said an AI chatbot was asked to produce “verbatim quotes.”</dd>
+        <dt>What Breaker said</dt><dd>That he had unpublished the book and would rewrite it, and that buyers could ask Amazon for refunds.</dd>
+        <dt>Status</dt><dd>The physical editions were pulled. The English and Spanish Kindle editions were still on sale as of November 7, 2026.</dd>
+      </dl>
+    </section>
+
     <section id="summary" class="prose">
       <span class="sec-num">01</span>
       <h2>Summary</h2>
@@ -627,7 +648,7 @@ footer a{color:var(--ink-2)}
           <time><b>27</b>Jan 2026</time>
           <div class="event-body">
             <h4>“Robert Breaker’s new Book, Chapter 8”</h4>
-            <p>Tony publishes a video that goes through a spreadsheet of every Chapter 8 quote and finds all but three of the 78 to be fake. The spreadsheet is linked in the appendix. For transparency, I had to correct him on John Wesley.</p>
+            <p>Tony publishes a video that goes through a spreadsheet of every Chapter 8 quote and finds all but three of the 78 to be fake. For transparency, I had to correct him on John Wesley. I have since checked Chapter 8 quote by quote myself: see my <a href="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-chapter-8-ai-quotes/">Chapter 8 audit</a>.</p>
             <p class="note">Note on Wesley: Tony’s notes on Wesley conflate Wesley’s view of confession in Romans 10 with petitionary salvation. Wesley did teach that people should ask God for grace as a means of grace, but he did not harmonize that with his comments on Romans 10.</p>
           </div>
         </div>
@@ -715,18 +736,8 @@ footer a{color:var(--ink-2)}
       </div>
     </section>
 
-    <section id="appendix">
-      <span class="sec-num">05</span>
-      <h2>Tony’s Chapter 8 spreadsheet</h2>
-      <div class="appendix">
-        <p>This spreadsheet is Tony’s work, not mine. Any notes marking a quote real, fake or unknown are his, except the Wesley correction noted above.</p>
-        <p>I am currently in the process of fact checking every quote he marked as unknown (31). I will edit the article to include that, when I have finished it.</p>
-        <a class="btn" href="https://tylermclaughlin1611.github.io/robert-breaker-unbroken-chain-chapter-8-ai-quotes/" target="_blank" rel="noopener">Read the Chapter 8 audit <span aria-hidden="true">→</span></a>
-      </div>
-    </section>
-
     <section id="sources">
-      <span class="sec-num">06</span>
+      <span class="sec-num">05</span>
       <h2>Sources</h2>
       <p class="src-note">“Advertisement” here means a video with the book’s Amazon link in the description.</p>
       <div class="src-grid">
